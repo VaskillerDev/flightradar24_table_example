@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        html *
+        {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+            "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+            sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 16px !important;
+        }
+        h1{
+            font-size: 32px !important;
+        }
+    </style>
+</head>
+<body>
+<script src="script.js"></script>
+<div style="text-align: center;">
+    <h1>Информация c flightradar24 ✈️</h1>
+
+    <table align='center'>
+        <thead>
+        <tr>
+            <th>Номер рейса</th>
+            <th>Курс</th>
+            <th>Скорость</th>
+            <th>Высота</th>
+            <th>Координаты</th>
+            <th>Откуда</th>
+            <th>Куда</th>
+            <th>
+                <button id="th__button_sort" onclick="invertSort(this)" style="border-style: none; text-transform: none;margin-bottom: 0px; color: #0c54ed;">
+                    Расстояние до Домодедово 🔼
+                </button>
+            </th>
+        </tr>
+        </thead>
+        <tbody id="tbody__liveReload">
+
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>
